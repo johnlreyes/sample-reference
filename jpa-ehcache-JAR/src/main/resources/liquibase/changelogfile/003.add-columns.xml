@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+			    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+
+	<preConditions>
+        <dbms type="derby" />
+    </preConditions>
+
+
+    <changeSet id="002.status" author="john">
+		<addColumn tableName="status">
+			<column name="status" type="varchar(20)"/>
+		</addColumn>
+	</changeSet>
+
+    <changeSet id="002.info" author="john">
+		<addColumn tableName="info">
+			<column name="status_id" type="int"/>
+		</addColumn>
+	</changeSet>
+
+    <changeSet id="002.info_dynamic" author="john">
+		<addColumn tableName="info_dynamic">
+			<column name="info_id" type="int"/>
+            <column name="info_code" type="varchar(20)"/>
+            <column name="info_value" type="varchar(20)"/>
+		</addColumn>
+	</changeSet>
+
+</databaseChangeLog>

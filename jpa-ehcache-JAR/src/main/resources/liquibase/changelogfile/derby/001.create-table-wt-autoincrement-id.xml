@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+			    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+
+
+	<preConditions>
+        <dbms type="derby" />
+    </preConditions>
+
+
+    <changeSet id="001.status" author="john">
+    	<sqlFile path="/src/main/resources/liquibase/sql/derby/id_status.sql"/>
+    </changeSet>
+
+    <changeSet id="001.info" author="john">
+    	<sqlFile path="/src/main/resources/liquibase/sql/derby/id_info.sql"/>
+    </changeSet>
+
+    <changeSet id="001.info_dynamic" author="john">
+    	<sqlFile path="/src/main/resources/liquibase/sql/derby/id_info_dynamic.sql"/>
+    </changeSet>
+
+</databaseChangeLog>

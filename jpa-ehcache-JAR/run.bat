@@ -1,0 +1,1 @@
+mvn clean && mvn compile && mvn assembly:assembly && java -cp target\jpa-ehcache-1.0.0-SNAPSHOT-jar-with-dependencies.jar net.test.app.Main
