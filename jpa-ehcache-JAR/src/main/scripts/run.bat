@@ -1,2 +1,1 @@
-java -cp lib\jpa-ehcache-1.0.0-SNAPSHOT.jar net.test.app.Main
-pause
+java -Xmx1024m -Xms1024m -cp lib\jpa-ehcache-JAR-1.0.0-SNAPSHOT.jar net.test.app.Main

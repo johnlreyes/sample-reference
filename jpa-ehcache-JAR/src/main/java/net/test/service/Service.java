@@ -1,5 +1,6 @@
 package net.test.service;
 
+import net.test.model.InfoDynamicModel;
 import net.test.model.InfoModel;
 import net.test.model.StatusModel;
 
@@ -11,4 +12,7 @@ public interface Service {
     List<InfoModel> getAllInfo();
     void addStatus(StatusModel status);
     StatusModel getStatus(String status);
+    void addInfoDynamic(InfoDynamicModel infoDynamic);
+    InfoModel getInfo(int infoId);
+    long getTotalInfo();
 }

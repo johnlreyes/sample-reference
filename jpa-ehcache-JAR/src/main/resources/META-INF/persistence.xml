@@ -5,9 +5,11 @@
 		version="1.0">
 
 	<persistence-unit name="models" transaction-type="RESOURCE_LOCAL">
+
         <class>net.test.model.StatusModel</class>
         <class>net.test.model.InfoModel</class>
-        <class>net.test.model.InfoDynamicModel</class>       
+        <class>net.test.model.InfoDynamicModel</class>
+
     </persistence-unit>
 
 </persistence>

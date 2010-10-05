@@ -13,8 +13,8 @@
 
     <changeSet id="005.info_dynamic" author="john">
 		<addUniqueConstraint tableName="info_dynamic"
-                             columnNames="info_code,info_value" 
-                             constraintName="unique_info_dynamic_code_value"/>
+                             columnNames="info_id,info_code,info_value" 
+                             constraintName="unique_info_dynamic_info_id_info_code_info_value"/>
 	</changeSet>
 
 </databaseChangeLog>

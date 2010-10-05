@@ -18,8 +18,9 @@ public class InfoModel {
     @OneToOne
     @JoinColumn (name = "status_id")
     private StatusModel status;
-    @OneToMany
-    @JoinColumn (name="info_id", referencedColumnName = "id")
+    //@OneToMany
+    //@JoinColumn (name="info_id", referencedColumnName = "id")
+    @OneToMany (cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="info")
     private List<InfoDynamicModel> infoDynamicList;
 
     public Integer getId() {

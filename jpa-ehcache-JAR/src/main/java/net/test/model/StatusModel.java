@@ -4,6 +4,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="status")
+@org.hibernate.annotations.Cache(usage =
+org.hibernate.annotations.CacheConcurrencyStrategy.READ_ONLY
+)
 public class StatusModel {
 
     @Id
