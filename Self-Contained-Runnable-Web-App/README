@@ -1,0 +1,4 @@
+www.earldouglas.com/a-self-contained-runnable-web-application
+
+mvn package
+java -jar target/self-contained-0.0.1.jar
